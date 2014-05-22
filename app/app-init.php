@@ -42,6 +42,7 @@
     define ('SQL_INJECTION', 'exploits/sql-injection');
     define ('SESSION_HIJACK', 'exploits/session-hijack');
     define ('XSS_ATTACK', 'exploits/xss-attack');
+    define ('MIME_VALIDATION', 'exploits/xss-attack');
    
     // Crude routing for the Exploits pages:
     // To add a new Exploit:
@@ -51,6 +52,7 @@
         SQL_INJECTION  => array('path' => SQL_INJECTION,  'name' => 'SQL injection'),
         XSS_ATTACK     => array('path' => XSS_ATTACK,     'name' => 'XSS (JS injection)'),
         SESSION_HIJACK => array('path' => SESSION_HIJACK, 'name' => 'Session Hijacking'),
+        MIME_VALIDATION => array('path' => MIME_VALIDATION, 'name' => 'MIME Type Validation'),
         'unencrypted'  => array('path' => '#', 'name' => 'Unencrypted Credential'),
         'csrf'         => array('path' => '#', 'name' => 'Cross Site Request Forgery'),
     );
